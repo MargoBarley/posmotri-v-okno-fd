@@ -19,6 +19,10 @@ html {
   background-color: #1b1919;
 }
 
+.content {
+  display: grid;
+}
+
 h1,
 h2,
 h3,
