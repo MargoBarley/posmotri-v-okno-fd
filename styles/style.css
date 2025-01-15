@@ -24,6 +24,13 @@ html {
   display: grid;
 }
 
+.content__list-container {
+  height: 298px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
 h1,
 h2,
 h3,
