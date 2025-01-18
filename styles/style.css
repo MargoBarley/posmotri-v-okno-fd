@@ -49,6 +49,7 @@ html {
   grid-template-columns: 1fr 1fr 0.5fr;
   gap: 40px;
   align-items: start;
+  justify-items: stretch;
 }
 .content__details {
   grid-area: details;
@@ -58,28 +59,35 @@ html {
 }
 
 .content__list-container {
-  height: 298px;
+  height: 264px;
+  position: relative;
   overflow-y: scroll;
+}
+
+.content__list {
   display: flex;
   flex-direction: column;
 }
 
-.content__list {
-  position: relative;
+.content__list-item {
+  margin-bottom: 30px;
 }
 
-.content__list-item {
-  gap: 26px;
+.content__list-item:last-child {
+  margin-bottom: 0px;
 }
 
 .content__video-card {
-  grid-template-rows: 1fr;
+  display: flex;
   align-items: start;
+  justify-content: space-between;
 }
 
 .content__video-card-thumbnail {
   object-fit: fill;
   object-position: center;
+  width: 194px;
+  height: 103px;
 }
 
 .content__video-card-description-container {
