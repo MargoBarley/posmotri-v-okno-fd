@@ -112,10 +112,27 @@ html {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  text-transform: uppercase;
 }
 
 .content__accent {
   color: #545050;
+}
+
+.content__video-card-title {
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 h1,
