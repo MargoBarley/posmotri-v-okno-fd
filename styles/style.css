@@ -8,6 +8,39 @@ html {
   block-size: 100%;
 }
 
+.button {
+  cursor: pointer;
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.6px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  background-color: #1b1919;
+  color: #fff;
+  border: 1px solid white;
+  width: 100%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.search-form__submit-button:hover {
+  text-decoration: underline;
+}
+.search-form__submit-button:active {
+  background: #545050;
+}
+.search-form__submit-button:focus {
+  outline: double #fff;
+  border: 1px;
+}
+
+.more-button {
+  margin-top: 30px;
+  margin-bottom: 1px;
+}
+
 .page {
   display: flex;
   inline-size: 1200px;
@@ -17,6 +50,8 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  width: 1140px;
+  height: 534px;
 }
 
 .content {
@@ -25,7 +60,7 @@ html {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-auto-flow: row;
-  align-items: center;
+  align-items: end;
   width: 711px;
   gap: 30px;
 }
@@ -36,26 +71,117 @@ html {
 .result__video-container {
   display: flex;
   width: 711px;
-  height: 400px;
+  height: 386px;
   margin-bottom: 16px;
   position: relative;
 }
 .result__video {
-  object-fit: fill;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
+.title {
+  margin-bottom: 26px;
+}
+
+.search-form__fieldset-title {
+  font-family: Fira Sans Condensed;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 5px;
+}
 .search-form {
   display: grid;
-  grid-template-columns: 1fr 1fr 0.5fr;
+  grid-template-columns: 225px 1fr 194px;
   gap: 40px;
-  align-items: start;
+  align-items: end;
   justify-items: stretch;
 }
-.content__details {
-  grid-area: details;
+
+.search-form__label {
   display: flex;
-  gap: 30px;
-  flex-direction: column;
+  width: fit-content;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-form__label:has(:focus-visible) {
+  border: solid 1px #ffffff;
+  padding: 1px;
+}
+
+.search-form__label-text {
+  size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
+}
+
+.search-form__textfield {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  width: fit-content;
+  appearance: none;
+  gap: 10px;
+  background-color: #1b1919;
+  border-left: 0px;
+  border-right: 0px;
+  border-style: solid;
+  border-color: #ffffff;
+  color: #ffffff;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+}
+.search-form__textfield:focus {
+  border: none;
+  outline: none;
+}
+
+/* .search-form__textfield:has(:focus-visible) {
+  appearance: none;
+} */
+
+.search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+.search-form__pseudo-checkbox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  margin-right: 5px;
+  box-sizing: border-box;
+}
+
+.search-form__pseudo-checkbox::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  top: 1px;
+  left: 1px;
+}
+
+input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
+  grid-area: details;
+  display: block;
+  width: 15px;
+  height: 15px;
 }
 
 .content__list-container {
@@ -81,6 +207,12 @@ html {
   display: flex;
   align-items: start;
   justify-content: space-between;
+}
+.content__video-card:active {
+  background-color: #545050;
+}
+.content__video-card:hover {
+  text-decoration: underline;
 }
 
 .content__video-card-thumbnail {
@@ -128,11 +260,17 @@ html {
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  text-overflow: ellipsis;
+  width: 196px;
+  margin-bottom: 6px;
+  white-space: 196px;
+  overflow: hidden;
 }
 
 .content__card-link {
   text-decoration: none;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .content__video-card-description {
@@ -144,6 +282,17 @@ html {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 h1,
 h2,
 h3,
@@ -156,6 +305,7 @@ blockquote,
 fieldset {
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 ul,
