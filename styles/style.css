@@ -212,10 +212,10 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   align-items: start;
   justify-content: space-between;
 }
-.content__video-card:active {
+.content__card-link:active {
   background-color: #545050;
 }
-.content__video-card:hover {
+.content__card-link:hover {
   text-decoration: underline;
 }
 
