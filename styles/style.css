@@ -265,9 +265,8 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   text-overflow: ellipsis;
-  width: 196px;
+  max-width: 196px;
   margin-bottom: 6px;
-  white-space: 196px;
   overflow: hidden;
 }
 
