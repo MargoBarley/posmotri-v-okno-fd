@@ -143,8 +143,6 @@ html {
   border-style: solid;
   border-color: #ffffff;
   color: #ffffff;
-  padding-top: 2.5px;
-  padding-bottom: 2.5px;
 }
 .search-form__textfield:focus {
   outline: none;
