@@ -100,6 +100,7 @@ html {
   text-decoration-skip-ink: none;
   margin-bottom: 5px;
 }
+
 .search-form {
   display: grid;
   grid-template-columns: 225px 1fr 194px;
@@ -229,16 +230,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 
 .content__video-card-description-container {
   flex-grow: unset;
-}
-
-.search-form__fieldset-title {
-  font-family: Fira Sans Condensed;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21.6px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
 .title {
