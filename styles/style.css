@@ -171,12 +171,14 @@ html {
   box-sizing: border-box;
 }
 
-.search-form__pseudo-checkbox::after {
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: "";
   position: absolute;
   background-color: #fff;
   top: 1px;
   left: 1px;
+  width: 15px;
+  height: 15px;
 }
 
 input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
