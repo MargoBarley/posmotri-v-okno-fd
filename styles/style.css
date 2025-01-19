@@ -152,9 +152,6 @@ html {
   /* border: 1px solid white; */
 }
 
-.search-form__textfield:has(:focus-visible) {
-}
-
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
