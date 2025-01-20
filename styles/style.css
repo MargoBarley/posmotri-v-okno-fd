@@ -123,7 +123,7 @@ html {
   line-height: 21.6px;
 }
 
-.search-form__label:hover {
+.search-form__label .search-form__label-text:hover {
   text-decoration: underline;
 }
 
