@@ -210,11 +210,17 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   justify-content: space-between;
   background-color: inherit;
 }
+
 .content__card-link:active {
   background-color: #545050;
 }
+
 .content__card-link:hover {
   text-decoration: underline;
+}
+
+.content__card-link_current:active {
+  background-color: #545050;
 }
 
 .content__video-card-thumbnail {
