@@ -86,10 +86,6 @@ html {
   height: 100%;
 }
 
-.title {
-  margin-bottom: 26px;
-}
-
 .search-form__fieldset-title {
   font-family: Fira Sans Condensed;
   font-size: 18px;
@@ -241,6 +237,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   text-transform: uppercase;
+  margin-bottom: 26px;
 }
 
 .content__accent {
