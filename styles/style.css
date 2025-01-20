@@ -113,8 +113,8 @@ html {
 }
 
 .search-form__label:has(:focus-visible) {
-  border: solid 1px #ffffff;
-  padding: 1px;
+  outline: 1px solid white;
+  outline-offset: 1px;
 }
 
 .search-form__label-text {
@@ -132,7 +132,7 @@ html {
   font-weight: 400;
   font-size: 18px;
   line-height: 21.6px;
-  width: fit-content;
+  min-width: 225px;
   appearance: none;
   gap: 10px;
   background-color: #1b1919;
