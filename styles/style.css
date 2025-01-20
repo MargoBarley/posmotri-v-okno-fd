@@ -26,19 +26,18 @@ html {
   align-self: self-end;
 }
 
-.search-form__submit-button {
-  align-self: self-end;
-}
-
-.search-form__submit-button:hover {
+.button:hover {
   text-decoration: underline;
 }
-.search-form__submit-button:active {
+.button:active {
   background: #545050;
 }
-.search-form__submit-button:focus {
+.button:focus {
   outline: double #fff;
   border: 1px;
+}
+.search-form__submit-button {
+  align-self: self-end;
 }
 
 .more-button {
