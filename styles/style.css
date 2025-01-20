@@ -132,6 +132,7 @@ html {
 }
 
 .search-form__textfield {
+  font-family: Fira Sans Condensed;
   font-weight: 400;
   font-size: 18px;
   line-height: 21.6px;
