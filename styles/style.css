@@ -139,10 +139,11 @@ html {
   appearance: none;
   gap: 10px;
   background-color: #1b1919;
-  border-left: 0px;
-  border-right: 0px;
-  border-style: solid;
-  border-color: #ffffff;
+
+  border: none;
+  border-block-start: 1px solid #fff;
+  border-block-end: 1px solid #fff;
+
   color: #ffffff;
 }
 .search-form__textfield:focus {
