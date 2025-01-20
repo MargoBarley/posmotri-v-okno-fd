@@ -139,11 +139,9 @@ html {
   appearance: none;
   gap: 10px;
   background-color: #1b1919;
-
   border: none;
   border-block-start: 1px solid #fff;
   border-block-end: 1px solid #fff;
-
   color: #ffffff;
 }
 .search-form__textfield:focus {
@@ -193,7 +191,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 .content__list-container {
   height: 300px;
   position: relative;
-  overflow-y: scroll;
+  overflow: auto;
 }
 
 .content__list {
