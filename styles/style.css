@@ -123,7 +123,7 @@ html {
   line-height: 21.6px;
 }
 
-.search-form__label .search-form__label-text:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline;
 }
 
@@ -219,7 +219,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   text-decoration: underline;
 }
 
-.content__card-link_current:active {
+.content__card-link_current {
   background-color: #545050;
 }
 
